@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Register page</h1>
+    <form method="get">
+        <label for="first name"> first Name:</label>
+        <input name="fisrtname" id="firstname" type="text" placeholder="enter your first name" required>
+        <br><br>
+        <label for="last name"> last Name:</label>
+        <input name="lastname" id="lastname" type="text" placeholder="enter your last name">
+        <br><br>
+        <label for="date">date of birth:</label>
+        <input type="date">
+        <br><br>
+        <label for="gender">gender:</label>
+        <label for="gender_M">
+            <input type="radio" name="gender" value="M" id="gender_M" >male
+        </label>
+        <label for="gender_F">
+            <input type="radio" name="gender" value="F" id="gender_F" checked>female
+        </label>
+        <br><br>
+        <label for="pass">password:</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="con-pass">confirm password:</label>
+        <input type="password" name="con-pass" id="con-pass">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="enter your email">
+        <br><br>
+        <label for="Bio">Bio:</label>
+        <textarea name="Bio" id="Bio" placeholder="write Bio here.."></textarea>
+        <br><br>
+        <label>Upload Image:</label>
+        <input type="file">
+        <br><br>
+        <button type="submit">submit</button>
+        <button type="reset">clear</button>
+        <br><br><br>
+        <a href="./about.html">go to about</a>
+    </form>
+</body>
+
+</html>

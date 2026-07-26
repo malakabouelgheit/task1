@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Navbar */
+
+nav{
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #74ebd5;
+}
+
+/* Form Container */
+
+form{
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: #74ebd5;
+}
+
+input[type="radio"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+.gender{
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #444;
+}
+
+/* About Page */
+
+.about-container{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #74ebd5;
+}
+
+.about-container h1{
+    color: #222;
+}
+
+.about-container h2{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-container p{
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 600px){
+
+    body{
+        padding: 15px;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    form,
+    .about-container{
+        padding: 20px;
+    }
+}
